@@ -4,6 +4,12 @@
 
 This project simulates the art of quilling on images. It uses [Delaunay Triangulation](http://www.degeneratestate.org/posts/2017/May/24/images-to-triangles/) to create segments of the image, and matplotlib for drawing the various shapes.
 
+How to run:
+
+```
+python triangleit.py -n <number of points> <input file path> <output file path>
+```
+
 Examples:
 
 ![bird](https://user-images.githubusercontent.com/6567881/147434368-cbf8083b-e639-4a0f-b2fc-95e9d195fe47.jpg)
