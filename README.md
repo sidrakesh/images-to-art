@@ -1,6 +1,8 @@
 # Images to Quilling
 
-The name says it all. The code for [Delaunay Triangulation](http://www.degeneratestate.org/posts/2017/May/24/images-to-triangles/).
+[Quilling](https://en.wikipedia.org/wiki/Quilling) or paper filigree is an art form that involves the use of strips of paper that are rolled, shaped, and glued together to create decorative designs. The paper is rolled, looped, curled, twisted, and otherwise manipulated to create shapes that make up designs to decorate greetings cards, pictures, boxes, eggs, and to make models, jewelry, mobiles, etc.
+
+This project simulates the art of quilling on images. It uses [Delaunay Triangulation](http://www.degeneratestate.org/posts/2017/May/24/images-to-triangles/) to create segments of the image, and matplotlib for drawing the various shapes.
 
 Examples:
 
