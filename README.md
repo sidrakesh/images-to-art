@@ -27,6 +27,8 @@ Examples:
 
 This method uses Adaptive filtering for reducing noise, and generates max entropy points on the image. Then, lines are drawn through nearby points on the image (they shouldnt be too close though, because then there will be too many unnecessary lines).
 
+This method works well on images which have a clear background and high contrast of the image with the background.
+
 How to run (got good results at `number_of_points = 800`):
 
 ```
