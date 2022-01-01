@@ -40,4 +40,4 @@ Examples:
 ![b2](https://user-images.githubusercontent.com/6567881/147846651-3b767845-0ec4-45b6-859d-6763d0ced3b0.jpg)
 ![cat2](https://user-images.githubusercontent.com/6567881/147846653-8f4d013c-df6c-46b0-bca8-39d0b12ce969.jpg)
 ![stag](https://user-images.githubusercontent.com/6567881/147846657-cff908cf-0157-43ae-a3cf-6742253d36a1.jpg)
-![rg1](https://user-images.githubusercontent.com/6567881/147846656-65d38bc3-0430-4888-895b-b1ba47723c75.jpg)
+![hb](https://user-images.githubusercontent.com/6567881/147846669-6f0a621b-0ec0-4310-b32e-13af53aed825.jpg)
