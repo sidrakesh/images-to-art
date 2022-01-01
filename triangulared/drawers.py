@@ -198,8 +198,6 @@ def draw_tear_drop(ax, points, fi, n, color):
 
 def draw_circle_remaining_space(ax, extra_triangle, color):
     draw_tear_drop(ax, extra_triangle, 0, 3, color)
-    # nl = ConnectionPatch(extra_triangle[1], extra_triangle[2], coordsA="data", color=color)
-    # ax.add_patch(nl)
 
 def draw_triangles(ax, points, vertices, colours=None, **kwargs):
     """

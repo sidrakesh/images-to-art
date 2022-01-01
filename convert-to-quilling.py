@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 from scipy.spatial import Delaunay
 import argparse
 
-
 def process(input_path, output_path, n_points):
     image = plt.imread(input_path)
     points = generate_max_entropy_points(image, n_points=n_points)
@@ -28,7 +27,6 @@ def process(input_path, output_path, n_points):
 
     fig.savefig(output_path, bbox_inches='tight', pad_inches=0)
 
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Turns and image into triangles")
@@ -44,6 +42,3 @@ if __name__ == "__main__":
     n_points = int(ns.n_points)
 
     process(input_path=input_file, output_path=output_file, n_points=n_points)
-
-
-
