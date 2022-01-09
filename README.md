@@ -54,7 +54,7 @@ This method works well on images which have a clear background and high contrast
 How to run (got good results at `number_of_points = 800-1600`):
 
 ```
-python convert-to-stars.py -n <number of points> <input file path> <output file path>
+python convert-to-stars.py -n <number of points> -b <background color> <input file path> <output file path>
 ```
 
 Examples:
