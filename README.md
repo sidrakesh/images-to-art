@@ -43,3 +43,25 @@ Examples:
 ![cat2](https://user-images.githubusercontent.com/6567881/147846653-8f4d013c-df6c-46b0-bca8-39d0b12ce969.jpg)
 ![stag](https://user-images.githubusercontent.com/6567881/147846657-cff908cf-0157-43ae-a3cf-6742253d36a1.jpg)
 ![hb](https://user-images.githubusercontent.com/6567881/147846669-6f0a621b-0ec0-4310-b32e-13af53aed825.jpg)
+
+
+## Constellations
+
+This method uses Adaptive filtering for reducing noise, and generates max entropy points on the image. Then, stars are created on each entropy point, and the star size is determined based on the entropy value.
+
+This method works well on images which have a clear background and high contrast of the image with the background.
+
+How to run (got good results at `number_of_points = 800-1600`):
+
+```
+python convert-to-stars.py -n <number of points> <input file path> <output file path>
+```
+
+Examples:
+
+![bird4](https://user-images.githubusercontent.com/6567881/148687978-c0141684-d86c-43e7-9654-a1054a96f439.jpeg)
+![bird6](https://user-images.githubusercontent.com/6567881/148687996-d02c962a-3a55-4ee4-83ff-f801d88bce9a.jpg)
+![dog2](https://user-images.githubusercontent.com/6567881/148687997-be566c15-8c0d-49eb-8b08-3289298de122.jpg)
+![g11](https://user-images.githubusercontent.com/6567881/148688001-0294aae6-bbbe-4a2a-8a99-721550cdaa4a.jpg)
+![peacock2](https://user-images.githubusercontent.com/6567881/148688003-808dc585-bd5c-472c-a7eb-dfd6573f52df.jpg)
+![stag2](https://user-images.githubusercontent.com/6567881/148688004-73f10b68-c195-4213-b090-2fee391bb3ba.jpg)
