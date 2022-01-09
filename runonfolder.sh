@@ -1,7 +1,7 @@
-for file in ~/Downloads/testpics1/*
+for file in ~/Downloads/testpics3/*
 do
   echo "$file"
-  outputFolder="testout1"
-  result=$(echo "$file" | sed "s/testpics1/$outputFolder/")
-  python3 triangleit.py -n 800 "$file" "$result"
+  outputFolder="testout7"
+  result=$(echo "$file" | sed "s/testpics3/$outputFolder/")
+  python3 convert-to-stars.py -n 800 -b medium "$file" "$result"
 done

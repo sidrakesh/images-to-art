@@ -102,3 +102,57 @@ def generate_max_entropy_points(image, n_points=100,
 
     points = np.array(points)
     return points
+
+
+def generate_max_entropy_points_with_entropy(image, n_points=100,
+                                entropy_width=None,
+                                filter_width=None,
+                                suppression_width=None,
+                                suppression_amplitude=None):
+    """
+    Generates a set of points over the area of image, using maximum entropy
+    to guess which points are importance. All length scales are relative to the
+    density of the points.
+    :param image: image as an array
+    :param n_points: int number of points to generate:
+    :param entropy_width: width over which to measure entropy
+    :param filter_width: width over which to pre filter entropy
+    :param suppression_width: length for suppressing entropy before choosing the
+                              next point.
+    :param suppression_amplitude: amplitude to suppress entropy before choosing the
+                              next point.
+    :return:
+    """
+    # calculate length scale
+    ymax, xmax = image.shape[:2]
+    length_scale = np.sqrt(xmax*ymax / n_points)
+    entropy_width = length_scale * default(entropy_width, 0.2)
+    filter_width = length_scale * default(filter_width, 0.1)
+    suppression_width = length_scale * default(suppression_width, 0.3)
+    suppression_amplitude = default(suppression_amplitude, 3)
+
+    # convert to grayscale
+    im2 = color.rgb2gray(image)
+
+    # filter
+    im2 = (
+        255 * filters.gaussian(im2, sigma=filter_width, multichannel=True)
+    ).astype("uint8")
+
+    # calculate entropy
+    im2 = filters.rank.entropy(im2, morphology.disk(entropy_width))
+
+    points = []
+    entropies = []
+    for _ in range(n_points):
+        y, x = np.unravel_index(np.argmax(im2), im2.shape)
+        entropies.append(im2[y][x])
+
+        im2 -= gaussian_mask(x, y,
+                             shape=im2.shape[:2],
+                             amp=suppression_amplitude,
+                             sigma=suppression_width)
+        points.append((x, y))
+
+    points = np.array(points)
+    return points, entropies
