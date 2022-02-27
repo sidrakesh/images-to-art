@@ -65,3 +65,15 @@ Examples:
 ![g11](https://user-images.githubusercontent.com/6567881/148688001-0294aae6-bbbe-4a2a-8a99-721550cdaa4a.jpg)
 ![peacock2](https://user-images.githubusercontent.com/6567881/148688003-808dc585-bd5c-472c-a7eb-dfd6573f52df.jpg)
 ![stag2](https://user-images.githubusercontent.com/6567881/148688004-73f10b68-c195-4213-b090-2fee391bb3ba.jpg)
+
+## Short lines
+
+This method uses Adaptive filtering for reducing noise, and generates max entropy points on the image. Then, nearest point groups are created by joining points whose distance is less than the average distance between all nearest neighbors. Each connected component is given a random color form a pre-determined set of colors.
+
+This method works well on images which have a clear background and high contrast of the image with the background.
+
+How to run (got good results at `number_of_points = 1600-3200`):
+
+```
+python convert-to-short-lines.py -n <number of points> <input file path> <output file path>
+```
