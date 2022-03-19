@@ -82,7 +82,3 @@ Examples:
 
 ![sol](https://user-images.githubusercontent.com/6567881/159117491-369d52cc-de4d-4cb6-a2ee-660fa47940f3.jpg)
 ![et](https://user-images.githubusercontent.com/6567881/159117484-18c3848f-4b07-4ecd-8a08-53117fd3015c.jpg)
-![ig](https://user-images.githubusercontent.com/6567881/159117486-7bd489b2-0b3b-48e8-946e-56f6101e4132.jpg)
-![qm](https://user-images.githubusercontent.com/6567881/159117488-d67a2a12-ee89-45d8-be40-95c9f1c8ec3e.jpg)
-![soh](https://user-images.githubusercontent.com/6567881/159117490-ef11e963-7c6d-4d2f-bac3-ea3281133ad4.jpg)
-![tm](https://user-images.githubusercontent.com/6567881/159117492-f3420fad-36da-4abc-a64c-03fefe8ca0d5.jpg)
